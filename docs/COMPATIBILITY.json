@@ -1,0 +1,16 @@
+{
+  "game": "3.89",
+  "hook": "0.20",
+  "game_sha256": "e0b15bbbe16ffcd95d4ab61f08fe95dea4b95ebe1b3de428dae1d9477a9710d9",
+  "languages": [
+    "ru",
+    "fi"
+  ],
+  "source_encoding": "UTF-8",
+  "output_codepages": {
+    "ru": 1251,
+    "fi": 1252
+  },
+  "default_console": 0,
+  "default_logging": 0
+}

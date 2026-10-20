@@ -1,0 +1,6 @@
+Native URW.FNT, 256 glyphs, 8 x 10 cells, 20480 bytes.
+CP1252 layout; Finnish glyphs come from the original game font.
+Ä/ä/ö retain duplicate CP437 aliases for native source-case conversion.
+The character ø in the six Turn labels is the game's original degree-sign
+carrier in glyph slot F8. It is intentionally preserved, not a Finnish letter.
+Do not change encoding metadata without a matching font and output renderer.

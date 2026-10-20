@@ -1,0 +1,68 @@
+Hi everyone!
+
+I'd like to share a multilingual translation patch for UnReal World 3.89.
+Translation patch version: 0.20, as of 20 October 2026.
+
+Our rough estimate puts translation coverage at around 99%. This does not mean every possible situation has been tested: some words and messages may still appear in English.
+
+The translation was created using AI (Codex Pro, Astra). Human proofreading and editing are ongoing.
+Russian and Finnish are currently available. French, German, Ukrainian, Japanese and Chinese are planned for the future.
+
+We need native Finnish speakers to proofread the Finnish translation. If you'd like to help the community improve it, please get in touch!
+
+[b]Download the translation:[/b]
+[url=https://github.com/Librianets/UnRealWorld_MultiTranslate/releases]GitHub Releases[/url]
+[url=https://disk.yandex.ru/d/YopKMLmxCB1jKg]Yandex Disk[/url]
+
+[b]Installation:[/b]
+1. Download the latest translation archive, either Standard or Lite.
+2. Extract its contents into the game folder containing urw.exe. If a previous translation is installed, allow the files to be overwritten.
+3. Run URW_Launcher.exe and choose your language.
+
+This release is intended for UnReal World 3.89.
+
+[b]Standard vs Lite:[/b]
+Both editions provide the same translation and launcher features.
+Lite is suitable for playing and submitting bug-report logs. Standard also includes the translation catalogues and editing tools, including catalog.html and translations.csv.
+
+Choose Lite if you just want to play. Download Standard if you'd like to proofread and edit the translation yourself.
+
+[b]How you can help:[/b]
+Help with finding untranslated text, checking meaning and proofreading is very welcome.
+
+1. Report untranslated words and sentences.
+You can write them down and post them in this thread. Alternatively, enable "Write log" (LoggingEnabled = 1) in the launcher before starting the game. When you're finished, close the game, zip the relevant session folder inside logs, and send it to librianets@gmail.com or attach it here. If possible, include a few examples or a screenshot to help us locate the messages. Lite supports logging too.
+
+2. Report translation problems.
+If a sentence sounds unnatural, is grammatically incorrect or changes the meaning of the original, post it here. Suggested corrections are welcome.
+
+You can also edit the text yourself:
+— open rus_translate/catalog.html for Russian or fin_translate/catalog.html for Finnish;
+— use the Open button to load the current catalog.json from the same folder;
+— make your changes and click the button to save catalog.json;
+— post the saved catalog.json here or send it by email.
+
+3. Proofread the catalogue directly.
+You don't have to play to help: open catalog.html for your language, load the current catalog.json, and work through the translation.
+
+Please edit the translated text and its grammatical forms. Keep IDs, English source text, parameter names and control characters unchanged.
+
+[b]Testing your changes in the game:[/b]
+For the game to pick up your changes, the saved catalog.json must replace the file in rus_translate or fin_translate inside your game folder. If your browser saves it to Downloads, move it to the correct folder manually.
+
+Most changes to ordinary messages are picked up while the game is running. Save the file, then trigger the message or dialogue again. You usually don't need to restart the game. Changes to the encyclopedia's index or searchable headings may require a restart.
+
+If you can't find a message in the editor, or your change doesn't appear in the game, please report it here.
+
+[b]Version history:[/b]
+d — development build; r — release.
+
+For now, we're collecting feedback and proofreading suggestions. Further development is on hold until the next round of fixes or a game update.
+
+0.21d — planned: fixes for reported untranslated messages. We are currently collecting feedback; this version has not been released yet.
+0.20r — support for UnReal World 3.89, including translations for new clothing, cloth and encyclopedia updates.
+0.19r — Finnish translation expanded to cover the same confirmed content as the Russian translation.
+0.18d — shared multilingual libraries and initial Finnish support, covering about 2.5% of the enabled Russian catalogue entries.
+0.17r — added URW_Launcher.exe with game launch options and settings.
+0.16d — first general release based on translation 2.07; added Lite.
+0.01–0.15d — development builds: initial proofreading and development and refinement of text interception, processing and display.
