@@ -11,7 +11,7 @@ Russian and Finnish are currently available. French, German, Ukrainian, Japanese
 We need native Finnish speakers to proofread the Finnish translation. If you'd like to help the community improve it, please get in touch!
 
 [b]Download the translation:[/b]
-[url=https://github.com/Librianets/UnRealWorld_MultiTranslate/releases]GitHub Releases[/url]
+[url=https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest]GitHub Releases[/url]
 [url=https://disk.yandex.ru/d/YopKMLmxCB1jKg]Yandex Disk[/url]
 
 [b]Installation:[/b]
@@ -66,3 +66,19 @@ For now, we're collecting feedback and proofreading suggestions. Further develop
 0.17r — added URW_Launcher.exe with game launch options and settings.
 0.16d — first general release based on translation 2.07; added Lite.
 0.01–0.15d — development builds: initial proofreading and development and refinement of text interception, processing and display.
+
+[b]How to download from GitHub:[/b]
+No GitHub account or registration is required to download the public release.
+1. Open [url=https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest]the latest release[/url]. At the moment, it is Hook 0.20 for UnReal World 3.89. Check that the release supports your game version.
+2. Scroll down to Assets; expand the list if it is collapsed.
+3. For playing, click Hook_0.20_lite.zip. For playing and proofreading/editing, click Hook_0.20.zip. Download one of these archives; both include Russian and Finnish.
+4. Extract its contents into the game folder beside urw.exe, then run URW_Launcher.exe.
+
+The automatically generated Source code (zip) and Source code (tar.gz) downloads contain repository sources, not the ready-to-play patch. SHA256SUMS.txt contains download checksums and is optional for playing.
+
+[b]What the three GitHub repositories contain:[/b]
+[url=https://github.com/Librianets/UnRealWorld_MultiTranslate]UnRealWorld_MultiTranslate[/url] — ready-to-play archives in Releases, Russian/Finnish catalogues, offline translation editor and packaging tools. This is the main project for players and translators.
+[url=https://github.com/Librianets/UnRealWorld_Launcher]UnRealWorld_Launcher[/url] — source code for the launcher and its language/settings interface.
+[url=https://github.com/Librianets/UnRealWorld_HookTranslate]UnRealWorld_HookTranslate[/url] — source code for the translation loader and hook, build instructions and tests.
+
+Players do not need to download or build all three repositories. One Standard or Lite archive from the main project's Releases is sufficient; the original game is still required.

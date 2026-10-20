@@ -11,7 +11,7 @@
 Для вычитки финского перевода нужны носители языка. Если хотите помочь сообществу улучшить его качество, пожалуйста, отзовитесь!
 
 [b]Скачать перевод:[/b]
-[url=https://github.com/Librianets/UnRealWorld_MultiTranslate/releases]GitHub Releases[/url]
+[url=https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest]GitHub Releases[/url]
 [url=https://disk.yandex.ru/d/YopKMLmxCB1jKg]Яндекс Диск[/url]
 
 [b]Установка:[/b]
@@ -66,3 +66,19 @@ d — промежуточная сборка, r — релиз.
 0.17r — добавлен URW_Launcher.exe с запуском игры и настройками.
 0.16d — первый общий релиз на основе перевода 2.07, добавлена Lite-версия.
 0.01–0.15d — промежуточные версии: беглая вычитка перевода, разработка и доработка перехвата, обработки и вывода текста.
+
+[b]Как скачать с GitHub:[/b]
+Регистрация и аккаунт GitHub для скачивания публичного релиза не нужны.
+1. Откройте [url=https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest]последний релиз[/url]. Сейчас это Hook 0.20 для UnReal World 3.89. Убедитесь, что релиз подходит к вашей версии игры.
+2. Прокрутите страницу до блока Assets («Файлы релиза»); раскройте список, если он свёрнут.
+3. Для игры нажмите Hook_0.20_lite.zip. Для игры и вычитки/редактирования перевода — Hook_0.20.zip. Достаточно одного архива: в обоих есть русский и финский языки.
+4. Распакуйте содержимое в папку игры рядом с urw.exe и запустите URW_Launcher.exe.
+
+Автоматические ссылки Source code (zip) и Source code (tar.gz) содержат исходники репозитория, а не готовый патч для игры. SHA256SUMS.txt содержит контрольные суммы архивов; для самой игры он не требуется.
+
+[b]Что находится в трёх репозиториях GitHub:[/b]
+[url=https://github.com/Librianets/UnRealWorld_MultiTranslate]UnRealWorld_MultiTranslate[/url] — готовые архивы в Releases, русский и финский каталоги, редактор перевода и средства упаковки. Это основной проект для игроков и переводчиков.
+[url=https://github.com/Librianets/UnRealWorld_Launcher]UnRealWorld_Launcher[/url] — исходный код лаунчера, выбора языка и настроек.
+[url=https://github.com/Librianets/UnRealWorld_HookTranslate]UnRealWorld_HookTranslate[/url] — исходники загрузчика и перехвата вывода текста, инструкции сборки и проверки.
+
+Игрокам не нужно скачивать и собирать все три репозитория. Достаточно одного обычного или Lite-архива из Releases основного проекта; сама оригинальная игра устанавливается отдельно.
