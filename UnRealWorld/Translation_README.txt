@@ -1,29 +1,32 @@
-UnReal World3.89 — Hook0.20 / Русский + Suomi
+UnReal World 3.89.1 — Hook 0.21 / Русский + Suomi
 
-Распакуйте содержимое ZIP в папку чистой английской игры3.89.
-Запускайте URW_Launcher.exe: ENG / RUS / FIN. Язык подписей выбирается отдельно.
-Для этой сборки urw.exe SHA256:
-e0b15bbbe16ffcd95d4ab61f08fe95dea4b95ebe1b3de428dae1d9477a9710d9
-EXE игры, рецепты, английские ключи и сохранения патч не заменяет.
-Для3.88 используйте прежний Hook0.19, не смешивайте EXE разных версий.
+Распакуйте содержимое одного ZIP в папку игры рядом с urw.exe.
+Запустите URW_Launcher.exe и выберите ENG / RUS / FIN.
+Для игры3.89 используйте прежний Hook0.20;0.19 предназначен для3.88.
+Ожидаемый SHA256 urw.exe3.89.1:
+c6ed73642c1b1cb1f86b818c7586224398c2f0554f6114ced31bc40ff071806d
 
-По умолчанию ConsoleMode=0, LoggingEnabled=0: консоль и журналы выключены.
-Для обратной связи включите LoggingEnabled=1 в лаунчере или URWTrace.ini.
-Консоль:0 выключена,1 основные сообщения,2 подробный вывод.
-Рабочий английский текст переводится только в представлении интерфейса.
-GAME.NFO создаётся внутри выбранной папки языка/generated, оригинал сохранён.
-Имена поиска энциклопедии нормализуются в отдельной копии строки.
+0.21 добавляет совместимость с исправлением3.89.1. Русский и финский
+переводы сохранены:16301 карточка на язык,15801 включена,313 статей
+энциклопедии. Исправления рецептов, Linux и TYPE:textile сделаны авторами
+игры. Служебные метки/рецепты и английские буферы логики не переводятся.
+Известные пропуски перевода по отзывам пока накапливаются отдельно.
+Финскому переводу нужна вычитка носителями.
 
-Перевод3.89 включает новые ткани, одежду, вязание иглой и313статей энциклопедии.
-Финскому ещё нужна вычитка носителей; запуск меню не заменяет игровую проверку
-всех предметов, старых персонажей и модов. Старые названия предметов сохранены.
+Обычная версия содержит catalog.html и translations.csv; Lite содержит
+тот же перевод и механизм без редакторов. В архиве только содержимое
+UnRealWorld; готовый полный каталог дополнительно имеет utilities.
+HTML-редактор сохраняет catalog.json: перенесите файл в соответствующую
+папку языка. Большинство обычных сообщений обновляются без перезапуска;
+для изменения индекса энциклопедии может потребоваться перезапуск.
 
-Обычная версия содержит CSV и catalog.html для правки; Lite — тот же перевод
-и механизм без редакторов и исследовательских данных. В обычной папке
-utilities находятся исходники и импорт CSV. ZIP содержит только игровые файлы.
+Публичные настройки ConsoleMode=0 / LoggingEnabled=0: консоль и журналы
+выключены. Для обратной связи включите журнал в лаунчере до запуска игры.
+Логи сохраняются в logs; Lite тоже поддерживает запись журнала.
+Оригинальный EXE и сохранения не меняются. Оригинальная игра не включена.
 
-English: extract into a clean English3.89 game folder; run URW_Launcher.exe.
-Game files and saves stay original. Console/logging are off by default.
-Suomi: pura puhtaan englanninkielisen3.89pelin kansioon ja käynnistä
-URW_Launcher.exe. Valitse FIN. Suomenkielinen käännös tarvitsee pelaajien
-oikolukua. Pelin alkuperäiset tiedostot ja tallennukset säilyvät.
+English: extract one ZIP beside the original urw.exe3.89.1; run
+URW_Launcher.exe and choose a language. Same RU/FI translation as0.20;
+this release updates hotfix compatibility. Console/logging default off.
+Suomi: pura yksi ZIP alkuperäisen urw.exe3.89.1-tiedoston viereen ja
+käynnistä URW_Launcher.exe. Valitse FIN. Käännös tarvitsee oikolukua.

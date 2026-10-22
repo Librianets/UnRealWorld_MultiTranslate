@@ -1,4 +1,4 @@
-UnReal World 3.89 — Hook0.20
+UnReal World 3.89.1 — Hook0.21
 Правьте catalog.json или translations.csv; Context оставляйте владельцу проекта.
 CSV импортируется из utilities: import_russian.cmd / import_finnish.cmd.
 Файлы UTF-8; игровой вывод RU=CP1251, FI=CP1252. Не меняйте английские
@@ -9,4 +9,4 @@ Legacy_catalog.json содержит отдельный резервный сл�
 импорт основного CSV не заменяет их. Старые названия предметов сохранены
 для персонажей из прежних версий. Финский требует проверки носителями.
 Адреса в исторической грамматике — стабильные ID3.88, а не новые физические
-адреса. Сверка3.89 находится в utilities/research020/GENERATION.json.
+адреса. Сверка3.89.1 находится в utilities/research021/GENERATION.json.

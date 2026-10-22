@@ -1,14 +1,14 @@
 # UnReal World Multilingual Translation
 
 Russian and Finnish translation data and offline editing tools for
-UnReal World 3.89 / Hook0.20. This is the player-facing release repository.
+UnReal World 3.89.1 / Hook0.21. This is the player-facing release repository.
 Download ordinary or Lite ZIPs from [GitHub Releases](https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest) and extract their contents
 beside your original `urw.exe`, then run `URW_Launcher.exe`.
 
 Both editions use the same translation and runtime. Ordinary includes the
 offline HTML/CSV editor; Lite keeps only files required to play. Native Finnish
 proofreading is welcome. Known untranslated messages are being collected;
-0.21 has not been released.
+0.22 has not been released.
 
 ## Repositories
 
@@ -16,7 +16,7 @@ proofreading is welcome. Known untranslated messages are being collected;
 * **[UnRealWorld_HookTranslate](https://github.com/Librianets/UnRealWorld_HookTranslate)** contains the bootstrap and presentation DLL.
 * **[UnRealWorld_MultiTranslate](https://github.com/Librianets/UnRealWorld_MultiTranslate)** contains language files, editors and packaging.
 
-Use version 0.20 components together for3.89. The source folders here do not
+Use version 0.21 components together for3.89.1. The source folders here do not
 contain an original game executable. Built runtime files and release ZIPs
 are intentionally outside Git history.
 
@@ -39,7 +39,7 @@ Do not edit addresses to fix a translation. See `docs/COMPATIBILITY.json`.
 ## Package releases
 
 Place matching `URW_Launcher.exe`, `URWTrace.exe` and `URWTraceHook.dll` in
-`runtime/`. This local folder is ignored by Git. The prepared0.20 files can
+`runtime/`. This local folder is ignored by Git. The prepared0.21 files can
 be compared with `docs/BINARY_SHA256.json`. If runtime files are absent,
 the packaging script can use builds in the two sibling source repositories.
 

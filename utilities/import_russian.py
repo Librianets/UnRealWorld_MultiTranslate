@@ -4,7 +4,11 @@ import re
 from import_urw_compact_csv import main as import_table
 
 LANGUAGE='ru'  # fi or ru; editing labels in the launcher is independent.
-FOLDER=Path(__file__).resolve().parent.parent/'UnRealWorld'/('fin_translate'if LANGUAGE=='fi'else'rus_translate')
+ROOT=next((p for p in Path(__file__).resolve().parents if (p/'Codex/README.md').is_file() and (p/'UnReal_World_RPG').is_dir()),Path(__file__).resolve().parents[2])
+FOLDER=ROOT/'UnReal_World_RPG/work2/hook/3.89.1/fin_translate'
+if Path(__file__).with_name('PORTABLE_LANGUAGE.txt').exists():
+    FOLDER=Path(__file__).resolve().parent.parent/'UnRealWorld'/('fin_translate'if LANGUAGE=='fi'else'rus_translate')
+elif LANGUAGE=='ru':FOLDER=FOLDER.with_name('rus_translate')
 
 def validate(catalog):
     if catalog.get('language')!=LANGUAGE:raise ValueError('Wrong language catalogue')

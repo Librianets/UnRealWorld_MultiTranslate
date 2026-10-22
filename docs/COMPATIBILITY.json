@@ -1,7 +1,7 @@
 {
-  "game": "3.89",
-  "hook": "0.20",
-  "game_sha256": "e0b15bbbe16ffcd95d4ab61f08fe95dea4b95ebe1b3de428dae1d9477a9710d9",
+  "game": "3.89.1",
+  "hook": "0.21",
+  "game_sha256": "c6ed73642c1b1cb1f86b818c7586224398c2f0554f6114ced31bc40ff071806d",
   "languages": [
     "ru",
     "fi"
@@ -12,5 +12,9 @@
     "fi": 1252
   },
   "default_console": 0,
-  "default_logging": 0
+  "default_logging": 0,
+  "previous_releases": {
+    "0.20": "3.89",
+    "0.19": "3.88"
+  }
 }
