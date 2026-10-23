@@ -13,7 +13,7 @@ Using GitHub CLI (browser authentication):
    `gh repo create Librianets/REPOSITORY --public --source . --remote origin --push`.
    For an existing repository use its existing remote and push normally.
 5. Publish the two ZIPs from the main translation repository as release
-   assets for tag `hook-0.21`. Verify their sizes and SHA256 after upload.
+   assets for tag `hook-0.22`. Verify their sizes and SHA256 after upload.
 
 Account passwords are not accepted for Git HTTPS operations. Never put an
 access token in a repository, remote URL, shell command or publication log.
@@ -26,9 +26,9 @@ Using GitHub Desktop:
    Keep this code private for the public project. This creates its GitHub
    repository; do not create an empty repository on the website first.
 4. Repeat for the other two folders.
-5. In UnRealWorld_MultiTranslate create a GitHub Release for tag hook-0.21.
-   Attach dist/Hook_0.21.zip and dist/Hook_0.21_lite.zip as release assets.
-   Describe compatibility as UnReal World3.89.1, runtime0.21, RU/FI.
+5. In UnRealWorld_MultiTranslate create a GitHub Release for tag hook-0.22.
+   Attach dist/Hook_0.22.zip and dist/Hook_0.22_lite.zip as release assets.
+   Describe compatibility as UnReal World3.89.1, runtime0.22, RU/FI.
 
 With command-line Git, first create an empty matching public repository on
 GitHub without an automatically generated README or license. Then run these
@@ -38,7 +38,7 @@ REPOSITORY with that folder's matching name:
 ```
 git status
 git add .
-git commit -m "Prepare Hook 0.21 for UnReal World 3.89.1"
+git commit -m "Prepare Hook 0.22 for UnReal World 3.89.1"
 git remote add origin https://github.com/Librianets/REPOSITORY.git
 git push -u origin main
 ```
@@ -52,7 +52,9 @@ Our authored code/build tools/documentation use0BSD. Preserve MinHook/HDE
 notices. Translation data and fonts retain the scope described in
 LICENSE_SCOPE.txt. Source publication does not change game ownership.
 
-The staged0.21 archives contain the verified3.89.1 runtime and unchanged
-Russian/Finnish language data from0.20, with licensing notices included.
-Pending plant-message fixes are not part of this compatibility release.
-Previous releases and their tags remain available.
+The0.22 archives are the exact player-tested local files; do not rebuild or
+alter them during publication. Verify against SHA256SUMS.txt. A bundled README
+still describes their pre-publication local-test status; current release
+status/instructions are in GitHub release notes and docs/FORUM_0.22_steam.txt.
+Previous releases and their tags remain available. The original game is not
+included. The shipped translation DLL and language data are unchanged from0.21.

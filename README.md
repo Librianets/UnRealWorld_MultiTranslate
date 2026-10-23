@@ -1,14 +1,14 @@
 # UnReal World Multilingual Translation
 
 Russian and Finnish translation data and offline editing tools for
-UnReal World 3.89.1 / Hook0.21. This is the player-facing release repository.
+UnReal World 3.89.1 / Hook0.22. This is the player-facing release repository.
 Download ordinary or Lite ZIPs from [GitHub Releases](https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest) and extract their contents
 beside your original `urw.exe`, then run `URW_Launcher.exe`.
 
 Both editions use the same translation and runtime. Ordinary includes the
 offline HTML/CSV editor; Lite keeps only files required to play. Native Finnish
 proofreading is welcome. Known untranslated messages are being collected;
-0.22 has not been released.
+The next text fixes are pending.
 
 ## Repositories
 
@@ -16,7 +16,7 @@ proofreading is welcome. Known untranslated messages are being collected;
 * **[UnRealWorld_HookTranslate](https://github.com/Librianets/UnRealWorld_HookTranslate)** contains the bootstrap and presentation DLL.
 * **[UnRealWorld_MultiTranslate](https://github.com/Librianets/UnRealWorld_MultiTranslate)** contains language files, editors and packaging.
 
-Use version 0.21 components together for3.89.1. The source folders here do not
+Use version 0.22 components together for3.89.1. The source folders here do not
 contain an original game executable. Built runtime files and release ZIPs
 are intentionally outside Git history.
 
@@ -39,7 +39,7 @@ Do not edit addresses to fix a translation. See `docs/COMPATIBILITY.json`.
 ## Package releases
 
 Place matching `URW_Launcher.exe`, `URWTrace.exe` and `URWTraceHook.dll` in
-`runtime/`. This local folder is ignored by Git. The prepared0.21 files can
+`runtime/`. This local folder is ignored by Git. The prepared0.22 files can
 be compared with `docs/BINARY_SHA256.json`. If runtime files are absent,
 the packaging script can use builds in the two sibling source repositories.
 
@@ -66,3 +66,18 @@ fonts and third-party components. Preserve font notes and third-party notices.
 Google Drive is no longer used. GitHub Releases is the primary distribution
 channel; Yandex Disk is the backup.
 See [Russian instructions](README_RU.md).
+
+## Steam launch mode (0.22)
+
+In the launcher, choose the game language under **Launch from Steam**, click
+**Change game language**, then **Enable**. Use Steam's Play button afterwards.
+The clean game is saved as `urw-original.exe`; a copy of `URWTrace.exe` takes
+its place as `urw.exe`. The master `URWTrace.exe` stays beside it.
+All three direct launch buttons are disabled while this mode is installed.
+Change the game language separately with the game closed, or use **Restore
+original**. English runs without loading the translation DLL.
+
+**Repair after update** uses Steam's new original, checks compatibility, then
+reinstalls the loader. Unknown game versions are refused. Rollback never
+replaces a newer Steam EXE with an older backup. Differing old originals are
+preserved under SHA256-based filenames. Do not delete `URWSteam.state` manually.

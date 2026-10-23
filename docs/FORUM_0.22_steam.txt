@@ -1,0 +1,195 @@
+[h3]ENG[/h3]
+Hi everyone!
+
+I'd like to share a multilingual translation patch for UnReal World 3.89.1.
+Translation patch version: 0.22, as of 23 October 2026.
+
+Our rough estimate puts translation coverage at around 99%. This does not mean every possible situation has been tested: some words and messages may still appear in English.
+
+The translation was created using AI (Codex Pro, Astra). Human proofreading and editing are ongoing.
+Russian and Finnish are currently available. French, German, Ukrainian, Japanese and Chinese are planned for the future.
+
+We need native Finnish speakers to proofread the Finnish translation. If you'd like to help the community improve it, please get in touch!
+
+[b]Download the translation:[/b]
+[url=https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest]GitHub Releases[/url]
+[url=https://disk.yandex.ru/d/YopKMLmxCB1jKg]Yandex Disk[/url]
+
+[b]Installation:[/b]
+1. Download the latest translation archive, either Standard or Lite.
+2. Extract its contents into the game folder containing urw.exe. If a previous translation is installed, allow the files to be overwritten.
+3. Run URW_Launcher.exe and choose your language.
+
+This release is intended for UnReal World 3.89.1. Hook0.20 remains available for game3.89; Hook0.19 targets3.88.
+
+[b]Playing through Steam:[/b]
+Close the game and open URW_Launcher.exe. In "Launch from Steam", select the game language and click "Change game language", then "Enable". From now on, use the normal Play button in Steam.
+The original is preserved as urw-original.exe; our loader takes the name urw.exe. Its separate master copy, URWTrace.exe, stays in the folder.
+All three direct ENG/RUS/FIN launch buttons are disabled while Steam mode is enabled. To change languages, close the game and use "Change game language". English starts the game without the translation hook. "Restore original" disables this mode and restores the direct launch buttons.
+
+[b]After a Steam update or file verification:[/b]
+If Steam restores its own urw.exe, close the game, install a compatible translation update and click "Repair after update". The new original replaces the saved original and the loader is copied back to urw.exe. A differing old original is retained under a name containing its checksum. Unknown game versions are refused until the translation is adapted.
+"Restore original" never replaces a newer Steam EXE with an old backup. Do not manually delete URWSteam.state or urw-original.exe.
+This build has passed EN/RU/FI startup and rollback tests. Steam overlay, playtime tracking and Cloud behaviour are awaiting user testing.
+
+[b]Standard vs Lite:[/b]
+Both editions provide the same translation and launcher features.
+Lite is suitable for playing and submitting bug-report logs. Standard also includes the translation catalogues and editing tools, including catalog.html and translations.csv.
+
+Choose Lite if you just want to play. Download Standard if you'd like to proofread and edit the translation yourself.
+
+[b]How you can help:[/b]
+Help with finding untranslated text, checking meaning and proofreading is very welcome.
+
+1. Report untranslated words and sentences.
+You can write them down and post them in this thread. Alternatively, enable "Write log" (LoggingEnabled = 1) in the launcher before starting the game. When you're finished, close the game, zip the relevant session folder inside logs, and send it to librianets@gmail.com or attach it here. If possible, include a few examples or a screenshot to help us locate the messages. Lite supports logging too.
+
+2. Report translation problems.
+If a sentence sounds unnatural, is grammatically incorrect or changes the meaning of the original, post it here. Suggested corrections are welcome.
+
+You can also edit the text yourself:
+— open rus_translate/catalog.html for Russian or fin_translate/catalog.html for Finnish;
+— use the Open button to load the current catalog.json from the same folder;
+— make your changes and click the button to save catalog.json;
+— post the saved catalog.json here or send it by email.
+
+3. Proofread the catalogue directly.
+You don't have to play to help: open catalog.html for your language, load the current catalog.json, and work through the translation.
+
+Please edit the translated text and its grammatical forms. Keep IDs, English source text, parameter names and control characters unchanged.
+
+[b]Testing your changes in the game:[/b]
+For the game to pick up your changes, the saved catalog.json must replace the file in rus_translate or fin_translate inside your game folder. If your browser saves it to Downloads, move it to the correct folder manually.
+
+Most changes to ordinary messages are picked up while the game is running. Save the file, then trigger the message or dialogue again. You usually don't need to restart the game. Changes to the encyclopedia's index or searchable headings may require a restart.
+
+If you can't find a message in the editor, or your change doesn't appear in the game, please report it here.
+
+[b]Version history:[/b]
+d — development build; r — release.
+
+For now, we're collecting feedback and proofreading suggestions. Further development is on hold until the next round of fixes or a game update.
+
+0.22r — Steam launch: language selection, repair after updates and rollback. Translation content unchanged.
+0.21r — support for hotfix3.89.1; verified hook addresses and startup. Russian/Finnish translation content unchanged.
+0.20r — support for UnReal World 3.89, including translations for new clothing, cloth and encyclopedia updates.
+0.19r — Finnish translation expanded to cover the same confirmed content as the Russian translation.
+0.18d — shared multilingual libraries and initial Finnish support, covering about 2.5% of the enabled Russian catalogue entries.
+0.17r — added URW_Launcher.exe with game launch options and settings.
+0.16d — first general release based on translation 2.07; added Lite.
+0.01–0.15d — development builds: initial proofreading and development and refinement of text interception, processing and display.
+
+[b]How to download from GitHub:[/b]
+No GitHub account or registration is required to download the public release.
+1. Open [url=https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest]the latest release[/url]. At the moment, it is Hook 0.22 for UnReal World 3.89.1. Check that the release supports your game version.
+2. Scroll down to Assets; expand the list if it is collapsed.
+3. For playing, click Hook_0.22_lite.zip. For playing and proofreading/editing, click Hook_0.22.zip. Download one of these archives; both include Russian and Finnish.
+4. Extract its contents into the game folder beside urw.exe, then run URW_Launcher.exe.
+
+The automatically generated Source code (zip) and Source code (tar.gz) downloads contain repository sources, not the ready-to-play patch. SHA256SUMS.txt contains download checksums and is optional for playing.
+
+[b]What the three GitHub repositories contain:[/b]
+[url=https://github.com/Librianets/UnRealWorld_MultiTranslate]UnRealWorld_MultiTranslate[/url] — ready-to-play archives in Releases, Russian/Finnish catalogues, offline translation editor and packaging tools. This is the main project for players and translators.
+[url=https://github.com/Librianets/UnRealWorld_Launcher]UnRealWorld_Launcher[/url] — source code for the launcher and its language/settings interface.
+[url=https://github.com/Librianets/UnRealWorld_HookTranslate]UnRealWorld_HookTranslate[/url] — source code for the translation loader and hook, build instructions and tests.
+
+Players do not need to download or build all three repositories. One Standard or Lite archive from the main project's Releases is sufficient; the original game is still required.
+
+[hr][/hr][hr][/hr]
+[h3]RUS[/h3]
+
+Всем привет!
+
+Представляю многоязычный перевод UnReal World для версии игры 3.89.1.
+Версия перевода: 0.22, по состоянию на 23 октября 2026 года.
+
+Охват перевода, по приблизительной оценке проекта, составляет около 99%. Это не означает, что проверены все игровые ситуации: отдельные слова и сообщения ещё могут оставаться на английском.
+
+Перевод выполнен с помощью нейросети (Codex Pro, Astra). Продолжаются ручная вычитка и редактирование текста.
+Сейчас доступны русский и финский языки. В планах — французский, немецкий, украинский, японский и китайский.
+
+Для вычитки финского перевода нужны носители языка. Если хотите помочь сообществу улучшить его качество, пожалуйста, отзовитесь!
+
+[b]Скачать перевод:[/b]
+[url=https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest]GitHub Releases[/url]
+[url=https://disk.yandex.ru/d/YopKMLmxCB1jKg]Яндекс Диск[/url]
+
+[b]Установка:[/b]
+1. Скачайте архив последней версии перевода: обычный или облегчённый (Lite).
+2. Распакуйте содержимое архива в папку игры, где находится urw.exe. Если перевод уже установлен, подтвердите замену файлов.
+3. Запустите URW_Launcher.exe и выберите язык.
+
+Этот выпуск предназначен для UnReal World 3.89.1. Для игры3.89 доступен прежний Hook0.20; для3.88 — Hook0.19.
+
+[b]Чем обычная версия отличается от Lite:[/b]
+Перевод и возможности запуска в обеих версиях одинаковые.
+Lite подходит для игры и отправки журналов об ошибках. Обычная версия дополнительно содержит каталоги для редактирования перевода, в том числе catalog.html и translations.csv.
+
+Если хотите только играть, выбирайте Lite. Если планируете вычитывать и самостоятельно редактировать перевод, скачайте обычную версию.
+
+[b]Как помочь с переводом:[/b]
+Будем рады помощи с поиском пропусков, проверкой смысла и вычиткой.
+
+1. Сообщайте о непереведённых словах и предложениях.
+Можно выписывать их и отправлять сюда на форум. Другой вариант — перед запуском игры включить в лаунчере «Записывать журнал» (LoggingEnabled = 1). Закончив игру, закройте её и пришлите архив папки соответствующего запуска из logs на librianets@gmail.com или сюда на форум. По возможности добавьте несколько замеченных фраз или скриншот — так будет проще найти нужные сообщения. Для этого подходит и Lite.
+
+2. Сообщайте о неудачных переводах.
+Если фраза звучит неестественно, составлена неправильно или искажает смысл оригинала, отправьте её сюда на форум вместе с предлагаемым исправлением, если оно у вас есть.
+
+Можно исправить текст самостоятельно:
+— откройте rus_translate/catalog.html для русского или fin_translate/catalog.html для финского;
+— через кнопку открытия загрузите актуальный catalog.json из той же папки;
+— внесите правки и нажмите «Сохранить catalog.json»;
+— пришлите сохранённый catalog.json на форум или на почту.
+
+3. Вычитывайте каталог целиком.
+Играть необязательно: можно открыть catalog.html нужного языка, загрузить актуальный catalog.json и последовательно проверять перевод.
+
+Редактируйте перевод и его словоформы. Не меняйте идентификаторы, английский исходник, имена параметров и управляющие символы.
+
+[b]Проверка правок в игре:[/b]
+Чтобы игра увидела изменения, сохранённый catalog.json должен заменить файл именно в rus_translate или fin_translate внутри папки игры. Если браузер просто скачал его в «Загрузки», перенесите файл вручную.
+
+Большинство правок обычных сообщений подхватываются во время игры: сохраните файл и снова вызовите соответствующее сообщение или диалог. Перезапуск игры обычно не требуется. Для изменений индекса и поисковых заголовков энциклопедии может потребоваться перезапуск.
+
+Если сообщения нет в редакторе или правка не появилась в игре, сообщите об этом на форум.
+
+[b]Запуск через Steam:[/b]
+Закройте игру и откройте URW_Launcher.exe. В блоке «Запуск из Steam» выберите язык игры, нажмите «Сменить язык игры», затем «Включить». После этого запускайте игру обычной кнопкой «Играть» в Steam.
+Оригинал сохраняется как urw-original.exe, наш загрузчик занимает место urw.exe. Отдельная копия загрузчика URWTrace.exe остаётся рядом.
+Пока режим Steam включён, все три кнопки прямого запуска ENG/RUS/FIN заблокированы. Для смены языка закройте игру и используйте «Сменить язык игры». English запускает оригинал без хука перевода. Кнопка «Вернуть оригинальный запуск» отключает режим и возвращает прямые кнопки запуска.
+
+[b]После обновления или проверки файлов Steam:[/b]
+Если Steam восстановил свой urw.exe, закройте игру, установите совместимую версию перевода и нажмите «Восстановить после обновления». Новый оригинал сохраняется вместо прежнего, а загрузчик снова копируется на urw.exe. Отличающийся старый оригинал остаётся отдельно с контрольной суммой в имени. Неизвестная версия игры блокирует восстановление до адаптации перевода.
+«Вернуть оригинальный запуск» не заменит новый EXE Steam старой резервной копией. Не удаляйте вручную URWSteam.state и urw-original.exe.
+Сборка прошла проверки запуска EN/RU/FI и отката. Оверлей Steam, учёт времени и Steam Cloud ещё требуют проверки игроком.
+
+[b]История версий:[/b]
+d — промежуточная сборка, r — релиз.
+
+Пока собираем отзывы и предложения по вычитке. Дальнейшая разработка на паузе до следующего этапа исправлений или обновления игры.
+
+0.22r — запуск через Steam, смена языка, восстановление после обновления и откат. Тексты перевода прежние.
+0.21r — поддержка исправления3.89.1; проверены адреса перехвата и запуск. Содержание русского/финского перевода сохранено.
+0.20r — поддержка UnReal World 3.89, перевод новой одежды, тканей и обновлений энциклопедии.
+0.19r — финский перевод расширен до объёма подтверждённого русского перевода.
+0.18d — переход на многоязычные библиотеки, добавлен финский язык; первоначальный объём — около 2,5% включённых русских карточек.
+0.17r — добавлен URW_Launcher.exe с запуском игры и настройками.
+0.16d — первый общий релиз на основе перевода 2.07, добавлена Lite-версия.
+0.01–0.15d — промежуточные версии: беглая вычитка перевода, разработка и доработка перехвата, обработки и вывода текста.
+
+[b]Как скачать с GitHub:[/b]
+Регистрация и аккаунт GitHub для скачивания публичного релиза не нужны.
+1. Откройте [url=https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest]последний релиз[/url]. Сейчас это Hook 0.22 для UnReal World 3.89.1. Убедитесь, что релиз подходит к вашей версии игры.
+2. Прокрутите страницу до блока Assets («Файлы релиза»); раскройте список, если он свёрнут.
+3. Для игры нажмите Hook_0.22_lite.zip. Для игры и вычитки/редактирования перевода — Hook_0.22.zip. Достаточно одного архива: в обоих есть русский и финский языки.
+4. Распакуйте содержимое в папку игры рядом с urw.exe и запустите URW_Launcher.exe.
+
+Автоматические ссылки Source code (zip) и Source code (tar.gz) содержат исходники репозитория, а не готовый патч для игры. SHA256SUMS.txt содержит контрольные суммы архивов; для самой игры он не требуется.
+
+[b]Что находится в трёх репозиториях GitHub:[/b]
+[url=https://github.com/Librianets/UnRealWorld_MultiTranslate]UnRealWorld_MultiTranslate[/url] — готовые архивы в Releases, русский и финский каталоги, редактор перевода и средства упаковки. Это основной проект для игроков и переводчиков.
+[url=https://github.com/Librianets/UnRealWorld_Launcher]UnRealWorld_Launcher[/url] — исходный код лаунчера, выбора языка и настроек.
+[url=https://github.com/Librianets/UnRealWorld_HookTranslate]UnRealWorld_HookTranslate[/url] — исходники загрузчика и перехвата вывода текста, инструкции сборки и проверки.
+
+Игрокам не нужно скачивать и собирать все три репозитория. Достаточно одного обычного или Lite-архива из Releases основного проекта; сама оригинальная игра устанавливается отдельно.
