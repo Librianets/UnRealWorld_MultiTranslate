@@ -72,7 +72,8 @@ d — development build; r — release.
 
 For now, we're collecting feedback and proofreading suggestions. Further development is on hold until the next round of fixes or a game update.
 
-0.24r — yarn names with lengths; includes L/F2 fixes from the local0.23 build.
+0.24r — fixed translations of individual items: some original item names were missing from the recognition dictionary, so they remained in English.
+0.23d — fixed translations of character and animal descriptions (L) and quests (F2).
 0.22r — Steam launch: language selection, repair after updates and rollback. Translation content unchanged.
 0.21r — support for hotfix3.89.1; verified hook addresses and startup. Russian/Finnish translation content unchanged.
 0.20r — support for UnReal World 3.89, including translations for new clothing, cloth and encyclopedia updates.
@@ -173,7 +174,8 @@ d — промежуточная сборка, r — релиз.
 
 Пока собираем отзывы и предложения по вычитке. Дальнейшая разработка на паузе до следующего этапа исправлений или обновления игры.
 
-0.24r — названия пряжи с длиной; включены исправления L/F2 из локальной0.23.
+0.24r — исправлен перевод отдельных предметов: в словаре распознавания отсутствовали некоторые исходные названия, поэтому они оставались на английском.
+0.23d — исправлен перевод описаний персонажей и животных (L) и заданий (F2).
 0.22r — запуск через Steam, смена языка, восстановление после обновления и откат. Тексты перевода прежние.
 0.21r — поддержка исправления3.89.1; проверены адреса перехвата и запуск. Содержание русского/финского перевода сохранено.
 0.20r — поддержка UnReal World 3.89, перевод новой одежды, тканей и обновлений энциклопедии.
