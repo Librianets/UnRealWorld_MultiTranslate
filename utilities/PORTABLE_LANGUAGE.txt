@@ -1,1 +1,1 @@
-Hook0.24 RU/FI portable CSV import
+Hook0.25 RU/FI portable CSV import

@@ -10,7 +10,7 @@ REPOSITORY=Path(__file__).resolve().parent.parent
 if not (REPOSITORY/'UnRealWorld').is_dir():
     WORKSPACE=next(p for p in Path(__file__).resolve().parents if (p/'Codex/README.md').is_file() and (p/'UnReal_World_RPG').is_dir())
     REPOSITORY=WORKSPACE/'UnReal_World_RPG/git/UnRealWorld_MultiTranslate'
-VERSION='0.24'
+VERSION='0.25'
 GAME_VERSION='3.89.1'
 OUTPUT=REPOSITORY/'dist'
 NATIVE_RUNTIME=REPOSITORY/'runtime'
@@ -29,7 +29,7 @@ def runtime_file(name):
 def main():
     source=REPOSITORY/'UnRealWorld'
     binaries={name:runtime_file(name)for name in RUNTIME_FILES}
-    for name in ['URWTrace.ini','Translation_README.txt','Translation_HISTORY.txt','THIRD_PARTY_LICENSES.txt','CODE_LICENSE.txt','LICENSE_SCOPE.txt']:
+    for name in ['URWTrace.ini','Translation_README.txt','Translation_HISTORY.txt','THIRD_PARTY_LICENSES.txt','CODE_LICENSE.txt','LICENSE_SCOPE.txt','URWUpdater.ps1']:
         if not (source/name).is_file():raise FileNotFoundError(source/name)
     for language in LANGUAGES:
         for name in PLAY_FILES+EDIT_FILES:
@@ -43,7 +43,7 @@ def main():
     for edition,suffix in [('ordinary',''),('lite','_lite')]:
         dest=OUTPUT/('Hook_'+VERSION+suffix);game=dest/'UnRealWorld';game.mkdir(parents=True)
         for name,p in binaries.items():shutil.copy2(p,game/name)
-        for name in ['URWTrace.ini','Translation_README.txt','Translation_HISTORY.txt','THIRD_PARTY_LICENSES.txt','CODE_LICENSE.txt','LICENSE_SCOPE.txt']:shutil.copy2(source/name,game/name)
+        for name in ['URWTrace.ini','Translation_README.txt','Translation_HISTORY.txt','THIRD_PARTY_LICENSES.txt','CODE_LICENSE.txt','LICENSE_SCOPE.txt','URWUpdater.ps1']:shutil.copy2(source/name,game/name)
         ini=(game/'URWTrace.ini').read_text(encoding='utf-8-sig')
         if 'ConsoleMode=0'not in ini or'LoggingEnabled=0'not in ini or'GameExe=urw.exe'not in ini:raise ValueError('Public INI must use urw.exe and console/logging0/0')
         names=PLAY_FILES+(EDIT_FILES if edition=='ordinary'else[])
@@ -57,6 +57,10 @@ def main():
             (util/'README.txt').write_text('CSV imports use sibling UnRealWorld language folders.\nSource projects: UnRealWorld_Launcher and UnRealWorld_HookTranslate.\nThe release packager runs from the source repository, not this distribution folder.\n',encoding='utf-8')
             # A release folder is not the complete Git repository used by packager.
             for name in ['package_release.py','package_release.cmd']:(util/name).unlink(missing_ok=True)
+        update_files={p.relative_to(game).as_posix():sha(p)for p in game.rglob('*')if p.is_file()and p.name!='update_manifest.json'}
+        game_hash=json.loads((REPOSITORY/'docs/COMPATIBILITY.json').read_text())['game_sha256']
+        update=dict(schema=1,version=VERSION,edition='standard'if edition=='ordinary'else'lite',game_sha256=game_hash,files=update_files)
+        (game/'update_manifest.json').write_text(json.dumps(update,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         files={p.relative_to(game).as_posix():dict(bytes=p.stat().st_size,sha256=sha(p))for p in game.rglob('*')if p.is_file()}
         archive=dest.with_name(dest.name+'.zip')
         with zipfile.ZipFile(archive,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=9)as z:

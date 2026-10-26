@@ -1,7 +1,7 @@
 # UnReal World Multilingual Translation
 
 Russian and Finnish translation data and offline editing tools for
-UnReal World 3.89.1 / Hook0.24. This is the player-facing release repository.
+UnReal World 3.89.1 / Hook0.25. This is the player-facing release repository.
 Download ordinary or Lite ZIPs from [GitHub Releases](https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest) and extract their contents
 beside your original `urw.exe`, then run `URW_Launcher.exe`.
 
@@ -16,7 +16,7 @@ The0.24 release fixes yarn names and incorporates the0.23 L/F2 display fixes.
 * **[UnRealWorld_HookTranslate](https://github.com/Librianets/UnRealWorld_HookTranslate)** contains the bootstrap and presentation DLL.
 * **[UnRealWorld_MultiTranslate](https://github.com/Librianets/UnRealWorld_MultiTranslate)** contains language files, editors and packaging.
 
-Use version 0.24 components together for3.89.1. The source folders here do not
+Use version 0.25 package components together for3.89.1. The source folders here do not
 contain an original game executable. Built runtime files and release ZIPs
 are intentionally outside Git history.
 
@@ -39,7 +39,7 @@ Do not edit addresses to fix a translation. See `docs/COMPATIBILITY.json`.
 ## Package releases
 
 Place matching `URW_Launcher.exe`, `URWTrace.exe` and `URWTraceHook.dll` in
-`runtime/`. This local folder is ignored by Git. The prepared0.24 files can
+`runtime/`. This local folder is ignored by Git. The prepared0.25 files can
 be compared with `docs/BINARY_SHA256.json`. If runtime files are absent,
 the packaging script can use builds in the two sibling source repositories.
 
@@ -89,3 +89,27 @@ language catalogue. Game identifiers and crafting logic remain unchanged.
 Includes0.23 presentation-only parsing of L inspection and F2 journal blocks.
 L was confirmed by a player. Actual F2 quest gameplay needs more feedback.
 Unknown spans remain English. No new native hook addresses were added.
+
+## 0.25: updates and editions
+
+The GUI checks the latest stable GitHub release when you click **Check for updates**.
+Standard stays Standard and Lite stays Lite by default. Choose the other edition
+to switch, including within the same published version. Confirm installation.
+Windows PowerShell 5.1 is required (included in Windows 10/11).
+
+`URWUpdater.ps1` verifies SHA-256 and the per-file manifest, preserves INI settings,
+backs up replaced files to `URW_update_backup`, and refreshes an installed Steam
+loader. Translation edits are replaced by the release files; the backup retains
+only the previous update. Keep important edits separately before updating again.
+An error triggers rollback; a pending transaction is recovered on the next check.
+Only known editor files are removed when switching to Lite. Saves and unrelated
+files are untouched. The game must be closed. Unsupported game versions are refused.
+
+For a manual ZIP update, the GUI distinguishes an outdated installed loader from
+a missing/mismatched master and offers **Update Steam loader** where appropriate.
+The native bootstrap/DLL and translation catalogues remain at 0.24; only the GUI,
+updater and player documentation changed in package 0.25.
+
+## Translation coverage
+
+The prepared primary catalogue has all enabled text entries filled: 15,845 enabled entries for Russian and 15,844 for Finnish, including message templates and components. Catalogue completion is 100%; overall coverage of all reachable in-game messages has not been measured. English text can still occur. See [the coverage report](docs/COVERAGE_025.txt).

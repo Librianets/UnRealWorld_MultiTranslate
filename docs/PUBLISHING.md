@@ -1,1 +1,6 @@
-Hook0.24 for game3.89.1. Build HookTranslate, then Launcher; stage matching binaries in runtime. Run utilities/package_release.cmd. Upload Hook_0.24.zip, Hook_0.24_lite.zip and SHA256SUMS.txt to release hook-0.24. Keep previous releases. ZIPs contain only player files; no game executable, logs or utilities. Never replace published assets in place.
+Package 0.25 for game 3.89.1: GUI/updater 0.25; bootstrap/DLL/catalogues 0.24.
+Build the hook bootstrap first, then the GUI. Include URWUpdater.ps1.
+Run utilities/package_release.cmd: both ZIPs must include their edition-specific update_manifest.json.
+Publish both ZIPs plus SHA256SUMS.txt together in the latest stable release.
+The updater requires the exact Hook_VERSION.zip / Hook_VERSION_lite.zip asset names and hook-VERSION tag.
+Never replace published assets or move existing tags. Old releases remain available.

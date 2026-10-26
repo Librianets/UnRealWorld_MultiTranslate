@@ -1,0 +1,111 @@
+{
+  "package": "0.25",
+  "game": "3.89.1",
+  "languages": {
+    "ru": {
+      "catalogue_total": 16345,
+      "enabled": 15845,
+      "disabled": 500,
+      "enabled_messages": 5454,
+      "enabled_components": 10391,
+      "enabled_with_nonempty_source": 15844,
+      "filled_nonempty_source": 15844,
+      "empty_targets_with_nonempty_source": [],
+      "filled_percent": 100.0,
+      "empty_source_structural_units": 1,
+      "unchanged_enabled": 263,
+      "disabled_reasons": {
+        "preserved_diagnostic": 10,
+        "preserved_identifier": 2,
+        "needs_translation": 3,
+        "reviewed_developer_diagnostic": 21,
+        "reviewed_native_key_or_brand": 4,
+        "proven_developer_diagnostic": 460
+      },
+      "runtime_contracts": 16345,
+      "enabled_present_in_contracts": 15845,
+      "enabled_with_explicit_unit_reference": 15838,
+      "no_explicit_unit_reference": [
+        "u_013_0aa7be55fe5bb6f1aca2",
+        "u_389_item_9c190334097f144da03d",
+        "u_389_item_4d077a7ea4dd0d857068",
+        "u_389_item_adce5387f979a7394f41",
+        "u_389_item_d4a88330c75875ca721b",
+        "u_389_item_8175a3841e0d105ea058",
+        "u_389_item_66a51649b5765a5e760b"
+      ],
+      "static_reference_warning": "Presence of a reference or contract does not establish reachability, a matching runtime route, or on-screen delivery; absence of this particular reference field does not establish non-use.",
+      "encyclopedia_documents": 313,
+      "families": 660,
+      "runtime_routes": 225,
+      "fallback": {
+        "entries": {
+          "records": 75205,
+          "enabled": 67557,
+          "filled": 67557,
+          "same_as_source": 4849
+        },
+        "lexicon": {
+          "records": 47536,
+          "enabled": 47536,
+          "filled": 47536,
+          "same_as_source": 460
+        }
+      }
+    },
+    "fi": {
+      "catalogue_total": 16344,
+      "enabled": 15844,
+      "disabled": 500,
+      "enabled_messages": 5454,
+      "enabled_components": 10390,
+      "enabled_with_nonempty_source": 15843,
+      "filled_nonempty_source": 15843,
+      "empty_targets_with_nonempty_source": [],
+      "filled_percent": 100.0,
+      "empty_source_structural_units": 1,
+      "unchanged_enabled": 400,
+      "disabled_reasons": {
+        "preserved_diagnostic": 10,
+        "preserved_identifier": 2,
+        "needs_translation": 3,
+        "reviewed_developer_diagnostic": 21,
+        "reviewed_native_key_or_brand": 4,
+        "proven_developer_diagnostic": 460
+      },
+      "runtime_contracts": 16344,
+      "enabled_present_in_contracts": 15844,
+      "enabled_with_explicit_unit_reference": 15837,
+      "no_explicit_unit_reference": [
+        "u_013_0aa7be55fe5bb6f1aca2",
+        "u_389_item_9c190334097f144da03d",
+        "u_389_item_4d077a7ea4dd0d857068",
+        "u_389_item_adce5387f979a7394f41",
+        "u_389_item_d4a88330c75875ca721b",
+        "u_389_item_8175a3841e0d105ea058",
+        "u_389_item_66a51649b5765a5e760b"
+      ],
+      "static_reference_warning": "Presence of a reference or contract does not establish reachability, a matching runtime route, or on-screen delivery; absence of this particular reference field does not establish non-use.",
+      "encyclopedia_documents": 313,
+      "families": 660,
+      "runtime_routes": 225,
+      "fallback": {
+        "entries": {
+          "records": 75690,
+          "enabled": 55257,
+          "filled": 55257,
+          "same_as_source": 14947
+        },
+        "lexicon": {
+          "records": 47256,
+          "enabled": 47256,
+          "filled": 47256,
+          "same_as_source": 13243
+        }
+      }
+    }
+  },
+  "whole_game_translation_percent": null,
+  "whole_game_delivery_percent": null,
+  "limitation": "Catalogue completeness and static links do not measure every reachable game message, translation quality, or successful on-screen delivery. Fallback lists overlap the primary catalogue and must not be added to it."
+}
