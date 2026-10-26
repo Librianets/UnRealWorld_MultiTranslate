@@ -10,7 +10,7 @@ REPOSITORY=Path(__file__).resolve().parent.parent
 if not (REPOSITORY/'UnRealWorld').is_dir():
     WORKSPACE=next(p for p in Path(__file__).resolve().parents if (p/'Codex/README.md').is_file() and (p/'UnReal_World_RPG').is_dir())
     REPOSITORY=WORKSPACE/'UnReal_World_RPG/git/UnRealWorld_MultiTranslate'
-VERSION='0.22'
+VERSION='0.24'
 GAME_VERSION='3.89.1'
 OUTPUT=REPOSITORY/'dist'
 NATIVE_RUNTIME=REPOSITORY/'runtime'

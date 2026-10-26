@@ -1,4 +1,4 @@
-UnReal World 3.89.1 — Hook0.21
+UnReal World 3.89.1 — Hook0.24
 Правьте catalog.json или translations.csv; Context оставляйте владельцу проекта.
 CSV импортируется из utilities: import_russian.cmd / import_finnish.cmd.
 Файлы UTF-8; игровой вывод RU=CP1251, FI=CP1252. Не меняйте английские

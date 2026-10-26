@@ -1,14 +1,14 @@
 # UnReal World Multilingual Translation
 
 Russian and Finnish translation data and offline editing tools for
-UnReal World 3.89.1 / Hook0.22. This is the player-facing release repository.
+UnReal World 3.89.1 / Hook0.24. This is the player-facing release repository.
 Download ordinary or Lite ZIPs from [GitHub Releases](https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest) and extract their contents
 beside your original `urw.exe`, then run `URW_Launcher.exe`.
 
 Both editions use the same translation and runtime. Ordinary includes the
 offline HTML/CSV editor; Lite keeps only files required to play. Native Finnish
 proofreading is welcome. Known untranslated messages are being collected;
-The next text fixes are pending.
+The0.24 release fixes yarn names and incorporates the0.23 L/F2 display fixes.
 
 ## Repositories
 
@@ -16,7 +16,7 @@ The next text fixes are pending.
 * **[UnRealWorld_HookTranslate](https://github.com/Librianets/UnRealWorld_HookTranslate)** contains the bootstrap and presentation DLL.
 * **[UnRealWorld_MultiTranslate](https://github.com/Librianets/UnRealWorld_MultiTranslate)** contains language files, editors and packaging.
 
-Use version 0.22 components together for3.89.1. The source folders here do not
+Use version 0.24 components together for3.89.1. The source folders here do not
 contain an original game executable. Built runtime files and release ZIPs
 are intentionally outside Git history.
 
@@ -39,7 +39,7 @@ Do not edit addresses to fix a translation. See `docs/COMPATIBILITY.json`.
 ## Package releases
 
 Place matching `URW_Launcher.exe`, `URWTrace.exe` and `URWTraceHook.dll` in
-`runtime/`. This local folder is ignored by Git. The prepared0.22 files can
+`runtime/`. This local folder is ignored by Git. The prepared0.24 files can
 be compared with `docs/BINARY_SHA256.json`. If runtime files are absent,
 the packaging script can use builds in the two sibling source repositories.
 
@@ -55,8 +55,7 @@ the relevant session folder under `logs`. Lite supports logging too.
 
 ## Content and licensing
 
-Each language has 16301 catalogue entries, 15801 enabled, including 313
-encyclopedia articles. These counts do not prove coverage of every game state.
+The Russian catalogue has16345 entries; Finnish has16344, including313 encyclopedia articles per language. These counts do not prove coverage of every game state.
 Both languages pass 570 new item checks; the baseline suite also passed 568 RU,
 3711 FI,64 GUI and 18 real menu/font/close checks before publication.
 Gameplay and native-speaker review continue.
@@ -67,7 +66,7 @@ Google Drive is no longer used. GitHub Releases is the primary distribution
 channel; Yandex Disk is the backup.
 See [Russian instructions](README_RU.md).
 
-## Steam launch mode (0.22)
+## Steam launch mode (0.24)
 
 In the launcher, choose the game language under **Launch from Steam**, click
 **Change game language**, then **Enable**. Use Steam's Play button afterwards.
@@ -81,3 +80,12 @@ original**. English runs without loading the translation DLL.
 reinstalls the loader. Unknown game versions are refused. Rollback never
 replaces a newer Steam EXE with an older backup. Differing old originals are
 preserved under SHA256-based filenames. Do not delete `URWSteam.state` manually.
+
+##0.24 / 26 October2026
+
+Linen, hemp and nettle yarn now belong to the shared item grammar, including
+length suffixes and item descriptions. The new entries are editable in each
+language catalogue. Game identifiers and crafting logic remain unchanged.
+Includes0.23 presentation-only parsing of L inspection and F2 journal blocks.
+L was confirmed by a player. Actual F2 quest gameplay needs more feedback.
+Unknown spans remain English. No new native hook addresses were added.
