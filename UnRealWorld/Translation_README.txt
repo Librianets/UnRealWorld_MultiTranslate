@@ -1,4 +1,4 @@
-UnReal World 3.89.1 — Translation 0.25 — Russian / Finnish
+UnReal World 3.89.1 — Translation 0.26 — Russian / Finnish
 
 INSTALLATION
 1. Close the game. Download one archive: Standard or Lite.
@@ -53,3 +53,6 @@ Paina «Tarkista päivitykset». Oletuksena säilytetään nykyinen paketti. Voi
 Asetukset säilyvät. Korvattavat tiedostot tallennetaan kansioon URW_update_backup, jossa säilytetään vain yksi varmuuskopio päivitystä edeltävistä tiedostoista. Tallenna tärkeät omat muutokset erikseen ennen seuraavaa päivitystä.
 Automaattinen päivitys päivittää myös Steam-käynnistimen. Käsin tehdyn ZIP-päivityksen jälkeen paina tarvittaessa «Päivitä Steam-käynnistin». Pelin on oltava suljettu. Pelin alkuperäisen EXE-tiedoston sisältöä ei muuteta.
 Jos päivitys keskeytyy, seuraava tarkistus yrittää palauttaa vanhat tiedostot. Älä poista varmuuskopiota tai palautustietuetta ennen palautuksen valmistumista.
+
+0.26: improved F2 quest-journal translation, quest-giver descriptions, quantities and long entries.
+0.26: исправлен перевод журнала заданий F2, описаний квестодателей, количества предметов и длинных записей.

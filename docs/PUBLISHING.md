@@ -1,6 +1,1 @@
-Package 0.25 for game 3.89.1: GUI/updater 0.25; bootstrap/DLL/catalogues 0.24.
-Build the hook bootstrap first, then the GUI. Include URWUpdater.ps1.
-Run utilities/package_release.cmd: both ZIPs must include their edition-specific update_manifest.json.
-Publish both ZIPs plus SHA256SUMS.txt together in the latest stable release.
-The updater requires the exact Hook_VERSION.zip / Hook_VERSION_lite.zip asset names and hook-VERSION tag.
-Never replace published assets or move existing tags. Old releases remain available.
+Release hook-0.26 targets UnReal World 3.89.1. Build HookTranslate, then Launcher, and use matching runtime binaries. Publish Hook_0.26.zip, Hook_0.26_lite.zip and SHA256SUMS.txt as release assets; ZIPs contain only player files. Keep older releases and never replace published assets.
