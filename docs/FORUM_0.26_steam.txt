@@ -3,7 +3,7 @@ Hi everyone!
 
 [b]About the translation:[/b]
 I'd like to share a multilingual translation patch for UnReal World 3.89.1.
-Translation version: 0.25, released on 26 October 2026.
+Translation version: 0.26, released on 27 October 2026.
 
 All enabled text entries in the prepared translation catalogue have their translation fields filled: 100% for Russian and Finnish. The main catalogues contain 15,850 and 15,849 enabled entries respectively, including messages, templates and their components. This measures catalogue completion; some messages may still appear in English during play. Overall in-game coverage has not been measured.
 
@@ -111,7 +111,7 @@ Players do not need to download or build all three repositories. One Standard or
 
 [b]О переводе:[/b]
 Представляю многоязычный перевод UnReal World для версии игры 3.89.1.
-Версия перевода: 0.25 от 26 октября 2026 года.
+Версия перевода: 0.26 от 27 октября 2026 года.
 
 В подготовленном каталоге заполнены переводы всех включённых текстовых карточек: 100% для русского и финского языков. Основные каталоги содержат 15 850 и 15 849 включённые карточки соответственно: сообщения, шаблоны и их составные части. Это показатель заполненности каталога; в игре ещё могут встречаться английские сообщения. Общий охват всех игровых ситуаций пока не измерен.
 
