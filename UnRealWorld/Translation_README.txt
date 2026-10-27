@@ -1,4 +1,4 @@
-UnReal World 3.89.1 — Translation 0.26 — Russian / Finnish
+UnReal World 3.89.1 — Translation 0.28 — Russian / Finnish
 
 INSTALLATION
 1. Close the game. Download one archive: Standard or Lite.
@@ -56,3 +56,9 @@ Jos päivitys keskeytyy, seuraava tarkistus yrittää palauttaa vanhat tiedostot
 
 0.26: improved F2 quest-journal translation, quest-giver descriptions, quantities and long entries.
 0.26: исправлен перевод журнала заданий F2, описаний квестодателей, количества предметов и длинных записей.
+
+0.27: improved herbal-information cards, effect lists and knowledge descriptions.
+0.27: исправлен перевод карточек травничества, списков эффектов и степени изученности растений.
+
+0.28: translated generated quest replies and the selected dialogue line repeated after choosing an answer.
+0.28: исправлен перевод ответов в заданиях и повторения выбранных реплик.

@@ -1,1 +1,1 @@
-Release hook-0.26 targets UnReal World 3.89.1. Build HookTranslate, then Launcher, and use matching runtime binaries. Publish Hook_0.26.zip, Hook_0.26_lite.zip and SHA256SUMS.txt as release assets; ZIPs contain only player files. Keep older releases and never replace published assets.
+Release hook-0.28: UnReal World 3.89.1. Publish Hook_0.28.zip, Hook_0.28_lite.zip and SHA256SUMS.txt. ZIP roots contain only player files. Preserve older releases.

@@ -1,14 +1,18 @@
 # UnReal World Multilingual Translation
 
 Russian and Finnish translation data and offline editing tools for
-UnReal World 3.89.1 / Hook0.26. This is the player-facing release repository.
+UnReal World 3.89.1 / Hook0.28. This is the player-facing release repository.
 Download ordinary or Lite ZIPs from [GitHub Releases](https://github.com/Librianets/UnRealWorld_MultiTranslate/releases/latest) and extract their contents
 beside your original `urw.exe`, then run `URW_Launcher.exe`.
 
 Both editions use the same translation and runtime. Ordinary includes the
 offline HTML/CSV editor; Lite keeps only files required to play. Native Finnish
 proofreading is welcome. Known untranslated messages are being collected;
-Hook 0.26 improves quest-journal translation and long entries.
+Hook 0.28 improves quest-journal translation and long entries.
+
+## 0.28 — quest conversations and herbal information
+
+Fixes the chosen dialogue line repeated after selecting an answer, and NPC replies embedded in generated quest conversations. Includes 0.27 improvements to herbal-information cards and effect lists. Russian and Finnish are supported. Use matching 0.28 package components together.
 
 ## 0.26 — quest journal
 
@@ -20,7 +24,7 @@ Improves F2 journal translation in Russian and Finnish: herb quantities, animal 
 * **[UnRealWorld_HookTranslate](https://github.com/Librianets/UnRealWorld_HookTranslate)** contains the bootstrap and presentation DLL.
 * **[UnRealWorld_MultiTranslate](https://github.com/Librianets/UnRealWorld_MultiTranslate)** contains language files, editors and packaging.
 
-Use version 0.26 package components together for3.89.1. The source folders here do not
+Use version 0.28 package components together for3.89.1. The source folders here do not
 contain an original game executable. Built runtime files and release ZIPs
 are intentionally outside Git history.
 
@@ -43,7 +47,7 @@ Do not edit addresses to fix a translation. See `docs/COMPATIBILITY.json`.
 ## Package releases
 
 Place matching `URW_Launcher.exe`, `URWTrace.exe` and `URWTraceHook.dll` in
-`runtime/`. This local folder is ignored by Git. The prepared0.26 files can
+`runtime/`. This local folder is ignored by Git. The prepared0.28 files can
 be compared with `docs/BINARY_SHA256.json`. If runtime files are absent,
 the packaging script can use builds in the two sibling source repositories.
 
@@ -59,7 +63,7 @@ the relevant session folder under `logs`. Lite supports logging too.
 
 ## Content and licensing
 
-The Russian catalogue has16350 entries; Finnish has16349, including313 encyclopedia articles per language. These counts do not prove coverage of every game state.
+The Russian catalogue has16695 entries; Finnish has16694, including313 encyclopedia articles per language. These counts do not prove coverage of every game state.
 Both languages pass 570 new item checks; the baseline suite also passed 568 RU,
 3711 FI,64 GUI and 18 real menu/font/close checks before publication.
 Gameplay and native-speaker review continue.
